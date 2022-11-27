@@ -35,7 +35,7 @@ body{
     background-color: var(--brown);
 }
 /*Style body*/
-.introtext{
+body{
     margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
@@ -43,4 +43,17 @@ body{
     max-width: 60%;
     padding: 10px;
     color: var(--white);
+}
+.divider{
+    color: var(--red);
+    text-align: left;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+/*Style footer*/
+.socials{
+    margin-left: 0px;
+    margin-right: 20px;
 }
