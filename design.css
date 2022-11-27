@@ -28,9 +28,8 @@ body{
 }
 .navbar a:hover{
     background-color: var(--yellow);
-    color: black;
+    color: var(--brown);
 }
 .navbar a.active{
     background-color: var(--brown);
-    color: white;
 }
