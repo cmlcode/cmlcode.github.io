@@ -5,6 +5,9 @@
     --red: #99582A;
     --white: #FFE6A7;
 }
+body{
+    background-color: var(--brown);
+}
 /* Style navigation bar*/
 .navbar{
     overflow: hidden;
@@ -24,10 +27,10 @@
     float: left;
 }
 .navbar a:hover{
-    background-color: var(--blue);
+    background-color: var(--yellow);
     color: black;
 }
 .navbar a.active{
-    background-color: var(--yellow);
+    background-color: var(--brown);
     color: white;
 }
