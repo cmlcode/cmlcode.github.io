@@ -33,3 +33,9 @@ body{
 .navbar a.active{
     background-color: var(--brown);
 }
+/*Style body*/
+.body{
+    max-width: 80%;
+    text-align: center;
+    color: var(--white);
+}
