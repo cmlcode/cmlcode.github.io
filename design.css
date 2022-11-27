@@ -1,14 +1,21 @@
+:root{
+    --blue: #738290;
+    --yellow: #BB9457;
+    --brown: #432818;
+    --red: #99582A;
+    --white: #FFE6A7;
+}
 /* Style navigation bar*/
 .navbar{
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--red);
     position: sticky;
     top: 0;
 }
 .navbar a{
     float: right;
     display: block;
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -17,10 +24,10 @@
     float: left;
 }
 .navbar a:hover{
-    background-color: #ddd;
+    background-color: var(--blue);
     color: black;
 }
 .navbar a.active{
-    background-color: #666;
+    background-color: var(--yellow);
     color: white;
 }
