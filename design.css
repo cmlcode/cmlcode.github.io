@@ -46,10 +46,12 @@ body{
 }
 .divider{
     color: var(--red);
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 30%;
+    margin-left: 0px;
 }
 /*Style footer*/
 .socials{
