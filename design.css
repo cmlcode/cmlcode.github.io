@@ -7,12 +7,7 @@
 }
 body{
     background-color: var(--brown);
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
-    max-width: 60%;
-    padding: 10px;
     color: var(--white);
 }
 /* Style navigation bar*/
@@ -40,6 +35,14 @@ body{
 }
 .navbar a.active{
     background-color: var(--brown);
+}
+
+.introtext{
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
+    padding: 10px;
 }
 .divider{
     color: var(--red);
