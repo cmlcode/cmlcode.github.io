@@ -69,7 +69,6 @@ body{
 .divider{
     color: var(--red);
     text-align: center;
-    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 50%;
