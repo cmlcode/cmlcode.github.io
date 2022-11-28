@@ -5,6 +5,28 @@
     --red: #99582A;
     --white: #FFE6A7;
 }
+/*Font sizes*/
+p{
+    font-size: 1.8rem;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 3.0rem;
+}
+@media only screen and (max-width: 400px){
+    p{
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 2.34rem;
+    }
+    h2{
+        font-size: 2.0rem;
+        font-weight: 600;
+    }
+}
 body{
     background-color: var(--brown);
     text-align: center;
