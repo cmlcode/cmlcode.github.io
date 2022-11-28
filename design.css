@@ -21,14 +21,14 @@ body{
     color: var(--white);
 }
 /* Style navigation bar*/
-.navbar{
+.navbar-desktop{
     overflow: hidden;
     background-color: var(--red);
     position: sticky;
     top: 0;
-    font-size: 20px;
+    font-size: 1.8rem;
 }
-.navbar a{
+.navbar-desktop a{
     float: right;
     display: block;
     color: var(--white);
@@ -36,15 +36,18 @@ body{
     padding: 20px 25px;
     text-decoration: none;
 }
-.navbar a.left{
+.navbar-desktop a.left{
     float: left;
 }
-.navbar a:hover{
+.navbar-desktop a:hover{
     background-color: var(--yellow);
     color: var(--brown);
 }
-.navbar a.active{
+.navbar-desktop a.active{
     background-color: var(--brown);
+}
+.navbar-mobile{
+    display: none;
 }
 
 .introtext{
@@ -83,9 +86,46 @@ body{
     .introtext{
         max-width: 80%;
     }
-    .navbar a{
-        font-size: 1.5rem;
-        padding: 15px 15px;
-        float: center;
+
+    .navbar-desktop{
+        display: none;
     }
+    .navbar-mobile{
+        display: inline;
+        overflow: hidden;
+        background-color: var(--red);
+        position: sticky;
+        top: 0;
+        font-size: 1.8rem;
+    }
+    .navbar-mobile #navbarLinks{
+        display: none;
+    }
+    .navbar-mobile a{
+        float: right;
+        display: block;
+        color: var(--white);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .navbar-mobile a.left{
+        float: left;
+    }
+    .navbar-mobile a.icon{
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+    .navbar-mobile a:hover{
+        background-color: var(--yellow);
+        color: var(--brown);
+    }
+    .navbar-mobile a.active{
+        background-color: var(--brown);
+    }
+    
 }
