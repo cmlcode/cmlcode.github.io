@@ -2,18 +2,30 @@
 <html>
     <head>
         <title>Chris's Webpage</title>
-        <link rel="stylesheet" type="text/css" href="design.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="design.css">
         <!--External graphics-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="navbar">
-            <a href="./index.html" class="left">Chris Webpage</span>
+        <div class="navbar-desktop">
+            <a href="./index.html" class="left">Chris Webpage</a>
             <!--Float right so inverse order-->
             <a href="#" class="active">Connect</a>
             <a href="./projects.html">Projects</a>
             <a href="./index.html">Home</a>
+        </div>
+        <div class="navbar-mobile">
+            <a href="./index.html">Chris Webpage</a>
+            <a href="javascript:void(0);" class="icon" onclick="changeDropdownVisibility()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="navbarLinks">
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="#" class="active">Connect</a>
+            </div>
         </div>
 
         <div class="introtext">

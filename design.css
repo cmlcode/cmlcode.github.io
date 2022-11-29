@@ -91,38 +91,34 @@ body{
         display: none;
     }
     .navbar-mobile{
-        display: inline;
         overflow: hidden;
+        display: block;
         background-color: var(--red);
-        position: sticky;
-        top: 0;
-        font-size: 1.8rem;
+        position: relative;
     }
     .navbar-mobile #navbarLinks{
         display: none;
     }
     .navbar-mobile a{
-        float: right;
-        display: block;
         color: var(--white);
-        text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-    }
-    .navbar-mobile a.left{
-        float: left;
+        display: block;
+        text-align: center;
     }
     .navbar-mobile a.icon{
         background: black;
         display: block;
-
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .navbar-mobile a:hover{
         background-color: var(--yellow);
         color: var(--brown);
     }
     .navbar-mobile a.active{
-        background-color: var(--brown);
+        display: none;
     }
     
 }
