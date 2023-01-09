@@ -6,7 +6,9 @@
     --white: #FFE6A7;
     --fontbase: 3.2vw;
 }
+
 /*Font sizes*/
+
 p{
     font-size: 1.8rem;
     font-size: var(--fontbase);
@@ -21,6 +23,7 @@ h2{
 }
 
 /*Modify all*/
+
 html, body{
     background-color: var(--brown);
     margin: 0px;
@@ -28,6 +31,7 @@ html, body{
     max-width: 100%;
 }
 /* Style navigation bar*/
+
 .navbar-desktop{
     background-color: var(--brown);
     position: fixed;
@@ -104,8 +108,88 @@ html, body{
     font-size: calc(0.9 * 3 * var(--fontbase));
 }
 
+/*Style Connect*/
+
+.connect{
+    z-index: 0;
+    position: relative;
+    top: 72px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--brown);
+    max-width: 100%;
+}
+.connect .text{
+    position: relative;
+    overflow: none;
+    float: left;
+    top: calc(0.75*30vh);
+    left: 15vw;
+    max-width: 75vw;
+}
+.connect p{
+    line-height: 5vw;
+    display: inline;
+    color: var(--red);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.connect h2{
+    line-height: 6vw;
+    display: inline;
+    color: var(--blue);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.connect h1{
+    position: relative;
+    line-height: 10vw;
+    left: 2vw;
+    display: inline;
+    color: var(--white);
+    font-size: calc(0.9 * 3 * var(--fontbase));
+}
+
+/*Style Projects*/
+
+.project{
+    z-index: 0;
+    position: relative;
+    top: 72px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--brown);
+    max-width: 100%;
+}
+.project .text{
+    position: relative;
+    overflow: none;
+    float: left;
+    top: calc(0.75*30vh);
+    left: 15vw;
+    max-width: 75vw;
+}
+.project p{
+    line-height: 5vw;
+    display: inline;
+    color: var(--red);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.project h2{
+    line-height: 6vw;
+    display: inline;
+    color: var(--blue);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.project h1{
+    position: relative;
+    line-height: 10vw;
+    left: 2vw;
+    display: inline;
+    color: var(--white);
+    font-size: calc(0.9 * 3 * var(--fontbase));
+}
 
 /*Style footer*/
+
 .socials{
     position: relative;
     max-width: 100%;
@@ -137,6 +221,7 @@ html, body{
 }
 
 /* Phone design*/
+
 @media only screen and (max-width: 680px){
     p{
         font-size: 1.8rem;
