@@ -1,32 +1,40 @@
 :root{
     --blue: #738290;
-    --yellow: #BB9457;
-    --brown: #432818;
-    --red: #99582A;
+    --yellow: #8e5e11;
+    --brown: #4b2b18;
+    --red: #8f7c4b;
     --white: #FFE6A7;
+    --fontbase: 3.2vw;
 }
 /*Font sizes*/
 p{
     font-size: 1.8rem;
+    font-size: var(--fontbase);
 }
 h1{
     font-size: 3.5rem;
+    font-size: calc(1.95*var(--fontbase));
 }
 h2{
     font-size: 3.0rem;
+    font-size: calc(1.66 * var(--fontbase))
 }
-body{
-    background-color: var(--brown);
-    text-align: center;
-    color: var(--white);
+
+/*Modify all*/
+html, body{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
 }
 /* Style navigation bar*/
 .navbar-desktop{
-    overflow: hidden;
-    background-color: var(--red);
-    position: sticky;
+    background-color: var(--brown);
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100vw;
     font-size: 1.8rem;
+    max-width: 100%;
 }
 .navbar-desktop a{
     float: right;
@@ -40,23 +48,58 @@ body{
     float: left;
 }
 .navbar-desktop a:hover{
-    background-color: var(--yellow);
-    color: var(--brown);
+    background-color: var(--brown);
+    color: var(--red);
 }
 .navbar-desktop a.active{
-    background-color: var(--brown);
+    background-color: var(--yellow);
+}
+.navbar-desktop a.active:hover{
+    background-color: var(--yellow);
+    color: var(--white)
 }
 .navbar-mobile{
     display: none;
 }
 
-.introtext{
-    margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 60%;
-    padding: 10px;
+/*Style homescreen*/
+
+.homescreen{
+    z-index: 0;
+    position: relative;
+    top: 72px;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--brown);
+    max-width: 100%;
 }
+.homescreen .text{
+    position: relative;
+    overflow: none;
+    float: left;
+    top: calc(0.75*30vh);
+    left: 15vw;
+    max-width: 75vw;
+}
+.homescreen p{
+    line-height: 5vw;
+    display: inline;
+    color: var(--red);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.homescreen h2{
+    line-height: 6vw;
+    display: inline;
+    color: var(--blue);
+    font-size: calc(0.9 * var(--fontbase));
+}
+.homescreen h1{
+    line-height: 10vw;
+    display: inline;
+    color: var(--white);
+    font-size: calc(0.9 * 3 * var(--fontbase));
+}
+
 .divider{
     color: var(--red);
     text-align: center;
@@ -72,7 +115,7 @@ body{
 }
 
 /* Phone design*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 680px){
     p{
         font-size: 1.8rem;
     }
@@ -86,25 +129,30 @@ body{
     .introtext{
         max-width: 80%;
     }
-
     .navbar-desktop{
         display: none;
     }
     .navbar-mobile{
+        background-color: var(--brown);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 100%;
         overflow: hidden;
         display: block;
-        background-color: var(--red);
-        position: relative;
     }
     .navbar-mobile #navbarLinks{
         display: none;
     }
     .navbar-mobile a{
+        position: relative;
         color: var(--white);
         padding: 14px 16px;
         text-decoration: none;
         display: block;
         text-align: center;
+        z-index: 1;
     }
     .navbar-mobile a.icon{
         background: black;
@@ -120,5 +168,15 @@ body{
     .navbar-mobile a.active{
         display: none;
     }
+    .homescreen{
+        z-index: 0;
+        position: relative;
+        top: 40px;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--brown);
+        max-width: 100%;
+    }
+    
     
 }
