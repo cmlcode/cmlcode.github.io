@@ -199,6 +199,19 @@ html, body{
         background-color: var(--brown);
         max-width: 100%;
     }
-    
+    .socials p{
+        position: relative;
+        overflow: none;
+        color: var(--red);
+        font-size: calc(0.9 * var(--fontbase));
+        left: 20vw;
+        max-width: 66%;
+    }
+    .socials a{
+        position: relative;
+        padding-left: 3vw;
+        left: 25vw;
+        max-width: 66%;
+    }
     
 }
