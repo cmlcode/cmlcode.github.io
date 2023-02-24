@@ -148,6 +148,47 @@ html, body{
     font-size: calc(0.9 * 3 * var(--fontbase));
 }
 
+.connect input,
+.connect button,
+.connect textarea{
+    font-family: inherit;
+    font-size: 100%;
+
+    width: 60vw;
+    height: 3vh;
+    padding: 0;
+    margin-left: 5vw;
+    margin-top: 0.5vh;
+    box-sizing: border-box;
+    background-color: var(--yellow);
+    color: var(--white);
+}
+.connect textarea,
+.connect input{
+    padding-left: 10px;
+}
+.connect textarea{
+    height: 20vh;
+}
+
+/*
+Changes default text color for input fields
+1st on Firefox, Chrome
+2nd on IE
+3rd on Microsoft Edge
+*/
+::placeholder{
+    color: var(--white);
+    opacity: 1;
+}
+:-ms-input-placeholder{
+    color: var(--white);
+    opacity: 1; 
+}
+::-ms-input-placeholder{
+    color: var(--white);
+}
+
 /*Style Projects*/
 
 .project{
