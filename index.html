@@ -1,90 +1,353 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Chris's Webpage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="script.js"></script>
-        <link rel="stylesheet" type="text/css" href="design.css">
-        <!--External graphics-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Chris Lewis</title>
+        <meta name="description" content="Portfolio Template for Developer" />
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="./index.js"></script>
     </head>
     <body>
-        
-        <div class="navbar-desktop">
-            <a href="#" class="left">Chris Webpage</a>
-            <!--Float right so inverse order-->
-            <a href="./connect.html">Connect</a>
-            <a href="./projects.html">Projects</a>
-            <a href="#" class="active">Home</a>
-        </div>
-        <div class="navbar-mobile">
-            <a href="#">Chris Webpage</a>
-            <a href="javascript:void(0);" class="icon" onclick="changeDropdownVisibility()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <div id="navbarLinks">
-                <a href="#" class="active">Home</a>
-                <a href="./projects.html">Projects</a>
-                <a href="./connect.html">Connect</a>
+        <header class="header">
+            <div class="header_wrapper">
+                <a href="./index.html#home">
+                    <div class="header_logo_wrapper">
+                        <div class="header_logo_img_wrapper">
+                            <img
+                                src="./assets/images/chrisPhoto.png"
+                                alt="Chris Lewis Logo Image"
+                                class="header_logo_img"
+                            />
+                        </div>
+                        <span class="header_logo_name">Chris Lewis</span>
+                    </div>
+                </a>
+                <div class="header_main">
+                    <ul class="header_links">
+                        <li class="header_link-wrapper">
+                            <a href="./index.html#home" class="header_link"> Home </a>
+                        </li>
+                        <li class="header_link-wrapper">
+                            <a href="./index.html#about" class="header_link">About </a>
+                        </li>
+                        <li class="header_link-wrapper">
+                            <a href="./index.html#projects" class="header_link">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="header_link-wrapper">
+                            <a href="./index.html#contact" class="header_link"> Contact </a>
+                        </li>
+                    </ul>
+                    <div class="header_menu_wrapper">
+                        <img
+                            src="./assets/svg/menu.svg"
+                            alt="hamburger menu"
+                            class="header_menu"
+                        />
+                        <img
+                            src="./assets/svg/menu_closed.svg"
+                            alt="hamburger menu close"
+                            class="header_menu-close invisible"
+                        />
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="homescreen">
-            <div class="text">
-                <h2>
-                    Hey, I'm</br>
-                <h2>
-                <h1>
-                    Chris Lewis</br>
-                </h1>
-                <p>
-                    Welcome to my little corner of the internet!<br>
-                    I'm a Computer Science and Economics Major at Tulane University<br>
-                    I mainly code in 
-                    <h2>
-                        Python
-                    </h2>
-                    <p>
-                        and 
-                    </p>
-                    
-                    <h2>
-                        C#
-                    </h2>
-                </p>
-            </div>
-        </div>
+            <div class="header_expanded">
+                <div class="header_expanded-content">
+                    <ul class="header_expanded_links">
+                        <li class="header_expanded_link">
+                            <a href="./index.html#home"> Home </a>
+                        </li>
 
-        <!--
-        <div class="divider">
-            <h2>
-                Projects
-            </h2>
-        </div>
-        <div class="projects">
-        </div>
-        -->
-        <div class="socials">
-            <h1>
-                Find me</br>
-            </h1>
-            <p>
-                Feel free to reach out to me about anything!
-            </p>
-            <a href="https://www.linkedin.com/in/christopher-m-lewis/">
-                <button type="button" class="socials">
-                    <i class="fa fa-linkedin-square fa-3x"></i>
-                </button>
-            </a>
-            <a href="https://github.com/cmlcode">
-                <button type="button" class="socials">
-                    <i class="fa fa-github fa-3x"></i>
-                </button>
-            </a>
-            <a href="./connect.html">
-                <button type="button" class="socials">
-                    <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                </button>
-            </a>
-        </div>
+                        <li class="header_expanded_link">
+                            <a href="./index.html#about"> About </a>
+                        </li>
+
+                        <li class="header_expanded_link">
+                            <a href="./index.html#projects"> Projects </a>
+                        </li>
+
+                        <li class="header_expanded_link">
+                            <a href="./index.html#contact"> Contact </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id = "home" class="home">
+            <div class="home_content">
+                <h1 class="home_heading">Hey, My name is</br>Chris Lewis</h1>
+                <div class="home_text_wrapper">
+                    <p class="home_text">
+                        I'm a software engineer and a junior at Tulane University.</br>
+                        Welcome to my little corner of the internet!
+                    </p>
+                </div>
+                <div class="home_button_wrapper">
+                    <a href="./index.html#projects" class="button button_big">Projects</a>
+                </div>
+            </div>
+            <div class="home_socials">
+                <div class="home_social">
+                    <a 
+                        href="https://www.linkedin.com/in/christopher-m-lewis" 
+                        target = "_blank" 
+                        class="home_social_link"
+                    >
+                        <img
+                            src="./assets/images/linkedin.png"
+                            alt="icon"
+                            class="home_social_icon"
+                        />
+                    </a>
+                </div>
+                <div class="home_social">
+                    <a
+                        href="https://github.com/cmlcode" 
+                        target = "_blank"
+                        class="home_social_link home_social_link_borderless"
+                    >
+                        <img
+                            src="./assets/images/github.png"
+                            alt="icon"
+                            class="home_social_icon"
+                        />
+                    </a>
+                </div>
+            </div>
+            <div class="home_mouse-scroll-cont">
+                <div class="mouse"></div>
+            </div>
+        </section>
+        <section id="about" class="about section_pad">
+            <div class="section_wrapper">
+                <h2 class="heading heading-sec heading_med">
+                    <span class="heading_section">About Me</span>
+                </h2>
+                <div class="about_content">
+                    <div class="about_content-main">
+                        <h3 class="about_header">Get to know me!</h3>
+                        <div class="about_content-details">
+                            <p class="about_text">
+                                Hey! It's
+                                <strong>Chris Lewis</strong>
+                                and I'm a <strong> Software Engineer </strong> located in
+                                Houston. I've worked at
+                                <strong> Management Controls </strong>
+                                as a QA Automation Engineer and 
+                                acted as VP of Administration for 
+                                <strong> CS Clubs </strong>
+                                at Tulane.
+                            </p>
+                            <p class="about_text">
+                                Feel free to
+                                <strong>contact</strong> me here.
+                            </p>
+                        </div>
+                        <a href="./index.html#contact" class="button button_med button_colored dynamicBgClr">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="about_content-skills">
+                        <h3 class="about_header">My Skills</h3>
+                        <div class="skills">
+                            <div class="skills_skill">C#</div>
+                            <div class="skills_skill">C</div>
+                            <div class="skills_skill">Python</div>
+                            <div class="skills_skill">SQL</div>
+                            <div class="skills_skill">Flutter</div>
+                            <div class="skills_skill">Git</div>
+                            <div class="skills_skill">Selenium</div>
+                            <div class="skills_skill">HTML</div>
+                            <div class="skills_skill">CSS</div>
+                            <div class="skills_skill">Javascript</div>
+                            <div class="skills_skill">Django</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects section_pad">
+            <div class="section_wrapper">
+                <h2 class="heading heading-sec heading_big">
+                    <span class="heading_section">Projects</span>
+                </h2>
+                <div class="projects_content">
+                    <div class="projects_row">
+                        <div class="projects_img_wrapper">
+                            <img
+                                src="./assets/images/projectExample.jpeg"
+                                alt="Software Screenshot"
+                                class="projects_img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="projects_row_content">
+                            <h3 class="projects_row_content_header">Apple Music Converter</h3>
+                            <ul>
+                                <li class="project_row_detail"> Converts an Apple Music Playlist link to a Spotify Playlist or a set of MP3 Files </li>
+                                <li class="project_row_detail"> Gets Apple Music songs through web scraping and connects with Spotify using HTTP requests </li>
+                                <li class="project_row_detail"> Matches songs between Apple Music, Spotify, and Youtube </li>
+                            </ul>
+                            </br>
+                            <a
+                                href="./project1.html"
+                                class="button button_med button_colored dynamicBgClr"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects_row">
+                        <div class="projects_img_wrapper">
+                            <img
+                                src="./assets/images/projectExample.jpeg"
+                                alt="Software Screenshot"
+                                class="projects_img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="projects_row_content">
+                            <h3 class="projects_row_content_header">Smart Agriculture</h3>
+                            <ul>
+                                <li class="project_row_detail"> Embedded Software in plant water dropper using the Arduino Framework</li>
+                                <li class="project_row_detail"> Automatically cares for household plants through providing water and nutriesnts for the plants </li>
+                                <li class="project_row_detail"> Measure's the plant's humidity and light level to determine best water levels </li>
+                            </ul>
+                            </br>
+                            <a
+                                href="./project2.html"
+                                class="button button_med button_colored dynamicBgClr"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects_row">
+                        <div class="projects_img_wrapper">
+                            <img
+                                src="./assets/images/projectExample.jpeg"
+                                alt="Software Screenshot"
+                                class="projects_img"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="projects_row_content">
+                            <h3 class="projects_row_content_header">Calendar Database</h3>
+                            <ul>
+                                <li class="project_row_detail"> Uses PostgreSQL to create a database </li>
+                                <li class="project_row_detail"> Can read input from a file or through http while calendar server is running </li>
+                                <li class="project_row_detail"> Filters inputs through SQL </li>
+                            </ul>
+                            </br>
+                            <a
+                                href="./project3.html"
+                                class="button button_med button_colored dynamicBgClr"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section_pad dynamicBg">
+            <div class="section_wrapper">
+                <h2 class="heading heading-sec heading_med">
+                    <span class="heading_section heading_section_light">Contact Me</span>
+                </h2>
+                <div class="contact_form_wrapper">
+                    <form
+                        action = "https://docs.google.com/forms/d/e/1FAIpQLSd-oW_fPoLFDwfopMgXKH0YMJeL4kYGoIWoHMMDsCfR6hq1UA/formResponse"
+                        method = "POST"
+                        class = "contact_form"
+                    >
+                        <div class="contact_form_field">
+                            <label class="contact_form_label" for="name">Name</label>
+                            <input
+                                required
+                                placeholder="Enter Your Name"
+                                type="text"
+                                class="contact_form_input"
+                                name="entry.1824174703"
+                                id="entry.1824174703"
+                            />
+                        </div>
+                        <div class="contact_form_field">
+                            <label class="contact_form_label" for="email">Email</label>
+                            <input
+                                required
+                                placeholder="Enter Your Email"
+                                type="text"
+                                class="contact_form_input"
+                                name="entry.1333099413"
+                                id="entry.1333099413"
+                            />
+                        </div>
+                        <div class="contact_form_field">
+                            <label class="contact_form_label" for="message">Message</label>
+                            <textarea
+                                required
+                                cols="30"
+                                rows="10"
+                                class="contact_form_input"
+                                placeholder="Enter Your Message"
+                                name="entry.265065170"
+                                id="entry.265065170"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="button button_colored contact_button">
+                            Submit
+                        </button>
+                    </form>
+                    <!-- Hide Google Form redirect -->
+                    <iframe name = "hidden_iframe" id = "hidden_iframe" style = "display: none;" ></iframe>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="section_wrapper">
+                <div class="footer_upper">
+                    <div class="footer_row footer_row_1">
+                        <h2 class="heading heading_small footer_heading_small">
+                            <span>Social</span>
+                        </h2>
+                        <div class="footer_socials">
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/christopher-m-lewis/">
+                                <img
+                                    class="footer_icon"
+                                    src="./assets/images/linkedin.png"
+                                    alt="icon"
+                                />
+                            </a>
+                            <a target="_blank" rel="noreferrer" href="https://github.com/cmlcode">
+                                <img
+                                    class="footer_icon"
+                                    src="./assets/images/github.png"
+                                    alt="icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_row footer_row_2">
+                        <h4 class="heading heading_small text-lt">Chris Lewis</h4>
+                        <p class="footer_desc">
+                           A Software Engineer in love with finding solutions to hard problems
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
