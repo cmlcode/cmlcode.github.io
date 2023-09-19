@@ -15,7 +15,6 @@
             href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
             rel="stylesheet"
         />
-        <script src="./index.js"></script>
     </head>
     <body>
         <header class="header">
@@ -35,9 +34,6 @@
                 <div class="header_main">
                     <ul class="header_links">
                         <li class="header_link-wrapper">
-                            <a href="./index.html#home" class="header_link"> Home </a>
-                        </li>
-                        <li class="header_link-wrapper">
                             <a href="./index.html#about" class="header_link">About </a>
                         </li>
                         <li class="header_link-wrapper">
@@ -54,22 +50,19 @@
                             src="./assets/svg/menu.svg"
                             alt="hamburger menu"
                             class="header_menu"
+                            id = "menu_btn"
                         />
                         <img
                             src="./assets/svg/menu_closed.svg"
                             alt="hamburger menu close"
-                            class="header_menu-close invisible"
+                            class="header_menu_open invisible"
                         />
                     </div>
                 </div>
             </div>
-            <div class="header_expanded">
+            <div class="header_expanded invisible">
                 <div class="header_expanded-content">
                     <ul class="header_expanded_links">
-                        <li class="header_expanded_link">
-                            <a href="./index.html#home"> Home </a>
-                        </li>
-
                         <li class="header_expanded_link">
                             <a href="./index.html#about"> About </a>
                         </li>
@@ -346,5 +339,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./index.js"></script>
     </body>
 </html>
