@@ -47,7 +47,7 @@ function executeCommand(commandName) {
     commandInput.value = '';
     const command = getCommands().find((cmd) => cmd.name === commandName);
     try {commandFunction = commandMap[command.execute];}
-    catch(e) {writeCommand(commandName, `Command '${commandName} not found. Type help for the command list.`); return;}
+    catch(e) {writeCommand(commandName, `Command '${commandName}' not found. Type help for the command list.`); return;}
 
     if (commandFunction) {
         const result = commandFunction();
