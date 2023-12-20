@@ -4,8 +4,6 @@ const open_menu_button = document.querySelector(".header_menu_open")
 const menu_box = document.querySelector(".header_expanded")
 
 menu_wrapper.addEventListener('click', () => {
-    //Open link bar
-    
     //Change menu button
     if (menu_button.classList.contains("invisible")){
         menu_button.classList.remove("invisible");

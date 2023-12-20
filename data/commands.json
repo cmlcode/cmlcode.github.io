@@ -1,0 +1,27 @@
+[
+    {
+        "name": "about",
+        "description": "learn about Chris!",
+        "execute": "about"
+    },
+    {
+        "name": "help",
+        "description": "get help",
+        "execute": "help"
+    },
+    {
+        "name": "projects",
+        "description": "view Chris' projects",
+        "execute": "projects"
+    },
+    {
+        "name": "socials",
+        "description": "learn how to find Chris",
+        "execute": "socials"
+    },
+    {
+        "name": "close",
+        "description": "close the terminal",
+        "execute": "close"
+    }
+]

@@ -1,14 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Chris Lewis</title>
-        <meta name="description" content="Portfolio Template for Developer" />
-
-        <link rel="stylesheet" href="css/style.css" />
-
+        <meta name="description" content="Chris Lewis Portfolio"/>
+        <script src = "js/site.js" defer></script>
+        <link rel="stylesheet" href="css/site.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -88,7 +87,7 @@
                     </p>
                 </div>
                 <div class="home_button_wrapper">
-                    <a href="./index.html#projects" class="button button_big">Projects</a>
+                    <a href="./terminal.html" class="button button_big">Terminal Version</a>
                 </div>
             </div>
             <div class="home_socials">
@@ -175,20 +174,29 @@
                 </h2>
                 <div class="projects_content">
                     <div class="projects_row">
-                        <div class="projects_img_wrapper">
-                            <img
-                                src="./assets/images/projectExample.jpeg"
-                                alt="Software Screenshot"
-                                class="projects_img"
-                                loading="lazy"
-                            />
-                        </div>
                         <div class="projects_row_content">
                             <h3 class="projects_row_content_header">Smart Agriculture</h3>
                             <ul>
                                 <li class="project_row_detail"> Embedded Software in plant water dropper using the Arduino Framework</li>
                                 <li class="project_row_detail"> Automatically cares for household plants through providing water and nutriesnts for the plants </li>
                                 <li class="project_row_detail"> Measure's the plant's humidity and light level to determine best water levels </li>
+                            </ul>
+                            </br>
+                            <a
+                                href="./SmartAgriculture.html"
+                                class="button button_med button_colored dynamicBgClr"
+                            >
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="projects_row">
+                        <div class="projects_row_content">
+                            <h3 class="projects_row_content_header">Calendar Database</h3>
+                            <ul>
+                                <li class="project_row_detail"> Stores user’s calendar in a PostgreSQL database </li>
+                                <li class="project_row_detail"> Can get and add events through a GUI, a CLI, or HTTP requests </li>
+                                <li class="project_row_detail"> Filters user’s add requests through SQL commands to prevent conflicts </li>
                             </ul>
                             </br>
                             <a
@@ -200,49 +208,16 @@
                         </div>
                     </div>
                     <div class="projects_row">
-                        <div class="projects_img_wrapper">
-                            <img
-                                src="./assets/images/projectExample.jpeg"
-                                alt="Software Screenshot"
-                                class="projects_img"
-                                loading="lazy"
-                            />
-                        </div>
                         <div class="projects_row_content">
-                            <h3 class="projects_row_content_header">Calendar Database</h3>
+                            <h3 class="projects_row_content_header">Personal Website</h3>
                             <ul>
-                                <li class="project_row_detail"> Stores user’s calendar in a PostgreSQL database </li>
-                                <li class="project_row_detail"> Can get and add events through a GUI, a CLI, or HTTP requests </li>
-                                <li class="project_row_detail"> Filters user’s add requests through SQL commands to prevent conflicts </li>
+                                <li class="project_row_detail"> Uses HTML, CSS, and JavaScript to create this website </li>
+                                <li class="project_row_detail"> Also incorporates a terminal version of the website </li>
+                                <li class="project_row_detail"> Uses json files to store commands and project details </li>
                             </ul>
                             </br>
                             <a
                                 href="./project3.html"
-                                class="button button_med button_colored dynamicBgClr"
-                            >
-                                View Project
-                            </a>
-                        </div>
-                    </div>
-                    <div class="projects_row">
-                        <div class="projects_img_wrapper">
-                            <img
-                                src="./assets/images/projectExample.jpeg"
-                                alt="Software Screenshot"
-                                class="projects_img"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div class="projects_row_content">
-                            <h3 class="projects_row_content_header">Airline Reservation System</h3>
-                            <ul>
-                                <li class="project_row_detail"> Cleans and handles user input </li>
-                                <li class="project_row_detail"> Allows uer to book, cancel, and select seats for flights </li>
-                                <li class="project_row_detail"> Stores user's information in a CSV format </li>
-                            </ul>
-                            </br>
-                            <a
-                                href="./project1.html"
                                 class="button button_med button_colored dynamicBgClr"
                             >
                                 View Project
@@ -339,6 +314,5 @@
                 </div>
             </div>
         </footer>
-        <script src="./index.js"></script>
     </body>
 </html>

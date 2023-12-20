@@ -1,0 +1,58 @@
+:root {
+    --terminal-color: #00ff00
+}
+body {
+    height: 100%;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#terminal {
+    width: 100%;
+    max-width: 90%;
+    border: 2px solid var(--terminal-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.5);
+}
+
+.prompt {
+    display: flex;
+    align-items: center;
+    color: var(--terminal-color);
+    margin-right: 5px;
+}
+
+#command-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--terminal-color);
+    width: 100%;
+}
+
+.output {
+    max-height: 50vh;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--terminal-color) black; /* Firefox */
+}
+.output::-webkit-scrollbar { /* WebKit */
+    width: 10px;
+}
+.output::-webkit-scrollbar-thumb { /* WebKit */
+    background-color: var(--terminal-color);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.output::-webkit-scrollbar-track { /* WebKit */
+    background: black;
+}
