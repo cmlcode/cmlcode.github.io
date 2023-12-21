@@ -757,6 +757,16 @@ display: none; } }
   width: 100%;
   margin-bottom: 6rem;
 }
+.project_video_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.projcet_video{
+  max-width: 100%;
+  height: auto;
+}
 .project_img {
   width: 100%;
 }
