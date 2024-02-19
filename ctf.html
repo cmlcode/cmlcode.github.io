@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ctf.css" />
+  <title>Capture The Flag Event</title>
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Cryptography</h1>
+      <section> 
+        <section>
+          <h3>Caesar Cipher</h3>
+          <p>A Caesar Cipher is a substition cipher where each letter in the plaintext is shifted a certain number of places down the alphabet. </p>
+          <p>Encryption</p>
+          <ol>
+            <li>Choose a shift value, often denoted as <em>k</em>.</li>
+            <li>Replace each letter in the plaintext with the letter <em>k</em> positions down the alphabet.</li>
+          </ol>
+          <p>Decryption</p>
+          <ol>
+            <li>Get the letter <em>k</em></li>
+            <li>Replace each letter with the letter up <em>k</em> times</li>
+          </ol>
+          <p>Example</p>
+          <ul>
+            <li>The plaintext word is "Cookies And Code".</li>
+            <li>We are going to encode it with a <em>k</em> of 10.</li>
+            <li>We then shift the alphabet down by 10 letters.</li>
+          </ul>
+          <table>
+            <tbody>
+              <tr><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr>
+              <tr><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td></tr>
+          </tbody> 
+        </table>
+        <ul>
+          <li>Finally, match each letter with its shifted letter.</li>
+          <li>"Cookies And Code" becomes "Myyusoc Kxn Myno".</li>
+          <li>To decrypt this, we can either brute force different <em>k</em>s or have prior knowledge of the <em>k</em>'s value.
+        </ul>
+        </section>
+        <section>
+          <h3>Atbash Cipher</h3>
+          <p>The Atbash cipher is a substitution cipher where each letter in the plaintext is replaced with its reverse in the alphabet.</p>
+          <p>Encryption</p>
+          <ol>
+            <li>Take the alphabet and reverse it</li>
+            <li>Replace each plaintext letter with its letter in the reversed alphabet</li>
+          </ol>
+          <p>Decryption</p>
+          <ol>
+            <li>Start with a reversed alphabet and match it with the normal one</li>
+            <li>Replace each reversed letter with its letter in the normal alphabet</li>
+          </ol>
+          <ul>
+            <li>The plaintext code is "Hello World".</li>
+            <li>We are now going to reverse the alphabet.</li>
+          </ul>
+          <table>
+            <tbody>
+              <tr><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td><td>k</td><td>l</td><td>m</td><td>n</td><td>o</td><td>p</td><td>q</td><td>r</td><td>s</td><td>t</td><td>u</td><td>v</td><td>w</td><td>x</td><td>y</td><td>z</td></tr>
+              <tr><td>z</td><td>y</td><td>x</td><td>w</td><td>v</td><td>u</td><td>t</td><td>s</td><td>r</td><td>q</td><td>p</td><td>o</td><td>n</td><td>m</td><td>l</td><td>k</td><td>j</td><td>i</td><td>h</td><td>g</td><td>f</td><td>e</td><td>d</td><td>c</td><td>b</td><td>a</td></tr>
+          </tbody> 
+        </table>
+        <ul>
+          <li>Match each letter with the reversed alphabet.</li>
+          <li>"Hello World" becomes "Svool Dliow".</li>
+          <li>To decrypt this, match the letters in "Svool Dliow" with its corresponding letters in the first row.
+        </ul>
+        </section>
+      </section>
+      <section>
+        <h2>Problems</h2>
+        <section>
+          <p>Problem 1</p>
+        </section>
+        <section>
+          <p>Problem 2</p>
+        </section>
+      </section>
+    </section>
+
+    <section>
+      <h1>Forensics</h1>
+    </section>
+
+    <section>
+      <h1>Web Exploitation</h1>
+    </section>
+  </main>
+</body>
+</html>
