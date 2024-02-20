@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/ctf.css" />
+  <script src="js/ctf.js"></script>
   <title>Capture The Flag Event</title>
 </head>
 <body>
@@ -76,9 +77,28 @@
         <h2>Problems</h2>
         <section>
           <p>Problem 1</p>
+          <p>Decrypt the phrase "R Olev Xllprvh"</p>
+          <form action="javascript:checkAnswer('answer1')">
+            <input type="text" id="answer1" name="answer1">
+            <input type="submit" value="Submit">
+          </form>
+          </br>
+          <button onclick="showHint('hint1_1')">Hint</button>
+          <p id="hint1_1" hidden>Use the Atbash Cipher</p>
         </section>
+      </br>
         <section>
           <p>Problem 2</p>
+          <p>Decrypt the phrase "Htslwfyx"</p>
+          <form action="javascript:checkAnswer('answer2')">
+            <input type="text" id="answer2" name="answer2">
+            <input type="submit" value="Submit">
+          </form>
+          </br>
+          <button onclick="showHint('hint2_1')">Hint</button>
+          <button onclick="showHint('hint2_2')">Hint</button>
+          <p id="hint2_1" hidden>Use the Caesar Cipher</p>
+          <p id="hint2_2" hidden>It was encrypted using a <em>k</em> of 5</p>
         </section>
       </section>
     </section>
