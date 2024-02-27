@@ -1,7 +1,7 @@
 const answers = new Map();
 answers.set("answer1", "i love cookies");
 answers.set("answer2", "congrats");
-answers.set('answer4', 'you found me!');
+answers.set('answer3', 'you found me!');
 
 function showHint(hint_element_id){
     const hint_element = document.getElementById(hint_element_id);
