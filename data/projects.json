@@ -19,11 +19,11 @@
     },
     {
         "_id": 2,
-        "name": "Personal Website",
+        "name": "cookiesandcode.net",
         "outline": [
-            "Uses HTML, CSS, and JavaScript to create this website",
-            "Also incorporates a terminal version of the website",
-            "Uses json files to store commands and project details"
+            "Uses HTML, CSS, JavaScript, and Django to create this website",
+            "Tracks club members, event and meeting times, and total attendance",
+            "Connects to a psql database that gets information from Google Drive"
         ]
     }
 ]
