@@ -1,0 +1,26 @@
+[
+	{
+		"isbn": -1,
+		"author": "DEFAULT",
+		"title": "DEFAULT",
+		"rating": 0
+	},
+	{
+		"isbn": 9780553573404,
+		"author": "George R.R. Martin",
+		"title": "A Game of Thrones",
+		"rating": 0
+	},
+	{
+		"isbn": 9780778311973,
+		"author": "Sarah Penner",
+		"title": "The Lost Apothecary",
+		"rating": 7
+	},
+	{
+		"isbn": 9780060741877,
+		"author": "Pat Frank",
+		"title": "Alas Babylon",
+		"rating": 6
+	}
+]
