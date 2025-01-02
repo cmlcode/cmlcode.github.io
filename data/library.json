@@ -1,6 +1,6 @@
 [
 	{
-		"isbn": -1,
+		"isbn": 978,
 		"author": "DEFAULT",
 		"title": "DEFAULT",
 		"rating": 0
@@ -9,7 +9,7 @@
 		"isbn": 9780553573404,
 		"author": "George R.R. Martin",
 		"title": "A Game of Thrones",
-		"rating": 0
+		"rating": 8
 	},
 	{
 		"isbn": 9780778311973,
@@ -21,6 +21,29 @@
 		"isbn": 9780060741877,
 		"author": "Pat Frank",
 		"title": "Alas Babylon",
+		"rating": 5
+	},
+	{
+		"isbn": 9780544336261,
+		"author": "Louis Lowry",
+		"title": "The Giver",
 		"rating": 6
+	},
+	{
+		"isbn": 9780316003957,
+		"author": "Trenton Steward",
+		"title": "The Mysterious Benedict Society",
+		"rating": 6
+	},
+		"isbn": 9780812699142,
+		"author": "William Goldman",
+		"title": "The Princess Bride",
+		"rating": 8
+	},
+	{
+		"isbn": 9780063021426,
+		"author": "R. F. Kuang",
+		"title": "Babel: An Arcane History",
+		"rating": 9
 	}
 ]
