@@ -27,8 +27,9 @@
 
 /* Set custom properties */
 :root {
-  --primary-color: #540808;
-  --white-color: #fff;
+  --primary-color: #540808; /* red */
+  --secondary-color: #fff; /* white */
+  --accent-color: #f8f6f0; /* gray */
 }
 html {
   box-sizing: border-box;
@@ -84,7 +85,7 @@ button {
 
 button:focus-visible,
 a:focus-visible{
-  outline: 2px solid black;
+  outline: 2px solid var(--primary-color);
 }
 
 /*
@@ -101,7 +102,7 @@ a:focus-visible{
 }
 
 .home_text {
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 2.2rem;
   line-height: 1.6;
   text-align: center;
@@ -120,9 +121,9 @@ a:focus-visible{
 }
 
 .home {
-  background: rgba(84, 8, 8, 0.8);
+  background: var(--primary-color);
   background-position: center;
-  color: #fff;
+  color: var(--secondary-color);
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -138,8 +139,8 @@ a:focus-visible{
 }
 
 .home_socials {
-  border: 2px solid #eee;
-  border-left: 2px solid #eee;
+  border: 2px solid var(--secondary-color);
+  border-left: 2px solid var(--secondary-color);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -158,7 +159,6 @@ a:focus-visible{
 }
 
 .home_social_link {
-  border-bottom: 2px solid #eee;
   display: block;
   padding: 1.2rem;
   transition: background .3s;
@@ -274,10 +274,10 @@ a:focus-visible{
 }
 
 .button {
-  background: #fff;
+  background: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-  color: #333;
+  color: var(--primary-color);
   display: inline-block;
   font-weight: 700;
   letter-spacing: 2px;
@@ -297,7 +297,7 @@ a:focus-visible{
 }
 .button_colored {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .section_pad {
@@ -313,13 +313,13 @@ a:focus-visible{
 /* Sections */
 
 .section_dark{
-  background: #f8f6f0;
-	color: black;
+  background: var(--accent-color);
+	color: var(--primary-color);
  }
 
  .section_light {
 	 background: white;
-	 color: black;
+	 color: var(--primary-color);
  }
 
 
@@ -416,7 +416,7 @@ a:focus-visible{
 /* Page Header */
 
 .header {
-  background: #fff;
+  background: var(--secondary-color);
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -436,7 +436,7 @@ a:focus-visible{
 }
 .header_logo_wrapper {
   align-items: center;
-  color: #333;
+  color: var(--primary-color);
   cursor: pointer;
   display: flex;
   transition: color .3s;
@@ -485,7 +485,7 @@ a:focus-visible{
 }
 
 .header_link {
-  color: #333;
+  color: var(--primary-color);
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 700;
@@ -523,7 +523,7 @@ a:focus-visible{
 }
 
 .header_expanded {
-  background: #fff;
+  background: var(--secondary-color);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
@@ -544,8 +544,8 @@ a:focus-visible{
   }
 }
 .header_expanded_link a {
-  border-bottom: 1px solid #eee;
-  color: #333;
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
   display: block;
 	font-size: 1.6rem;
   font-weight: 700;
@@ -560,7 +560,7 @@ a:focus-visible{
   color: var(--primary-color);
 }
 .header_expanded_link:first-child a {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--primary-color);
 }
 
 /* Skills List */
@@ -571,7 +571,7 @@ a:focus-visible{
 
 .skills_skill {
 	background: rgba(153, 153, 153, 0.2);
-	color: #777;
+	color: var(--primary-color);
 	font-size: 1.6rem;
 	font-weight: 600;
 	margin-bottom: 1.5rem;
@@ -583,8 +583,8 @@ a:focus-visible{
 /* Page Footer */
 
 .footer {
-  background: #000;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 .footer_upper {
   display: flex;
@@ -625,7 +625,7 @@ a:focus-visible{
 }
 
 .footer_desc {
-  color: #eee;
+  color: var(--secondary-color);
   font-size: 1.5rem;
   line-height: 1.7;
   margin-top: 2rem;
@@ -642,8 +642,7 @@ a:focus-visible{
   margin-right: 0;
 }
 .footer_lower {
-  border-top: 1px solid #444;
-  color: #eee;
+  color: var(--secondary-color);
   font-size: 1.2rem;
   padding: 4rem 0;
   text-align: center;
