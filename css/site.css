@@ -25,6 +25,11 @@
   padding: 0;
 }
 
+/* Set custom properties */
+:root {
+  --primary-color: #540808;
+  --white-color: #fff;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -111,7 +116,8 @@ a:focus-visible{
 }
 
 .invisible {
-  display: none; }
+  display: none;
+}
 
 .home {
   background: rgba(84, 8, 8, 0.8);
@@ -159,7 +165,7 @@ a:focus-visible{
   width: 100%;
 }
 
-home_social_link:hover {
+.home_social_link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -239,14 +245,14 @@ home_social_link:hover {
 }
 
 .heading_section::after {
-  background: #540808;
+  background: var(--primary-color);
   border-radius: 5px;
   content: '';
   height: 5px;
   left: 50%;
   position: absolute;
   top: calc(100% + 1.5rem);
-  transform: tranindex.html#aboutslateX(-50%);
+  transform: translateX(-50%);
   width: 3rem;
 }
 /* Phone */
@@ -290,7 +296,7 @@ home_social_link:hover {
   padding: 1.5rem 5rem;
 }
 .button_colored {
-  background: #540808;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -436,11 +442,11 @@ home_social_link:hover {
   transition: color .3s;
 }
 .header_logo_wrapper:hover {
-  color: #540808;
+  color: var(--primary-color);
 }
 
 .header_logo_img_wrapper {
-  background: #540808;
+  background: var(--primary-color);
   border-radius: 50px;
   height: 6.5rem;
   margin-right: 1.5rem;
@@ -489,7 +495,7 @@ home_social_link:hover {
   transition: color .3s;
 }
 .header_link:hover {
-  color: #540808;
+  color: var(--primary-color);
 }
 /* Phone, Tablet-port */
 @media only screen and (max-width: 56.25em) {
@@ -551,7 +557,7 @@ home_social_link:hover {
   transition: color .3s;
 }
 .header_expanded_link a:hover {
-  color: #540808;
+  color: var(--primary-color);
 }
 .header_expanded_link:first-child a {
   border-top: 1px solid #eee;
